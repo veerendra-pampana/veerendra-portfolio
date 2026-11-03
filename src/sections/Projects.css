@@ -1,0 +1,146 @@
+.projects {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 120px 7%;
+  border-top: 1px solid #222;
+}
+
+.projects-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.projects-heading h2 {
+  font-size: clamp(45px, 6vw, 75px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+.projects-heading h2 span {
+  color: #777;
+}
+
+.projects-subtitle {
+  color: #999;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 55px;
+  max-width: 550px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.project-card {
+  min-height: 340px;
+  padding: 32px;
+  background: #111;
+  border: 1px solid #292929;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: #777;
+  transform: translateY(-6px);
+}
+
+.featured-project {
+  background:
+    radial-gradient(circle at top right, #252525, #111 65%);
+  border-color: #555;
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-number {
+  font-size: 15px;
+  color: #777;
+}
+
+.project-category {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #999;
+  text-align: right;
+}
+
+.project-main {
+  margin: 35px 0;
+}
+
+.project-main h3 {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.project-main p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.project-technologies span {
+  padding: 8px 12px;
+  background: #202020;
+  border: 1px solid #333;
+  color: #bbb;
+  font-size: 11px;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #292929;
+  padding-top: 20px;
+  margin-top: 28px;
+  color: #888;
+}
+
+.project-footer span {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.project-footer svg {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.project-card:hover .project-footer svg {
+  transform: translate(4px, -4px);
+}
+
+@media (max-width: 750px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    padding: 85px 6%;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+}

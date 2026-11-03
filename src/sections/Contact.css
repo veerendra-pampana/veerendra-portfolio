@@ -1,0 +1,163 @@
+.contact {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 120px 7%;
+  border-top: 1px solid #222;
+}
+
+.contact-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.contact-heading h2 {
+  font-size: clamp(42px, 6vw, 75px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+.contact-heading h2 span {
+  color: #777;
+}
+
+.contact-heading > p:last-child {
+  color: #999;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-bottom: 65px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-info > p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid #292929;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  color: #aaa;
+  padding-left: 8px;
+}
+
+.contact-item div {
+  flex: 1;
+}
+
+.contact-item span {
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.contact-item h4 {
+  font-size: 14px;
+  margin-top: 7px;
+  font-weight: 500;
+}
+
+.contact-form-wrapper {
+  background: #111;
+  border: 1px solid #292929;
+  padding: 35px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: #191919;
+  border: 1px solid #333;
+  padding: 15px;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #888;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #666;
+}
+
+.contact-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  background: #ccc;
+}
+
+@media (max-width: 850px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contact {
+    padding: 85px 6%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form-wrapper {
+    padding: 22px;
+  }
+}
